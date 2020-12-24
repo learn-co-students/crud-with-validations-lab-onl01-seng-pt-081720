@@ -1,6 +1,6 @@
 class Song < ApplicationRecord
   validates :title, presence: true
-  validates :title, uniqueness: { scope: :artist_name && :release_year, message: "has already been added" }
+  validates :title, uniqueness: { scope: :artist_name && :release_year, message: "has already been added with that artist and release year" }
   # validate :song_repeat
   validates :release_year, presence: true,
                            if: :released?
