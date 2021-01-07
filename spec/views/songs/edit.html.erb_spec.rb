@@ -1,6 +1,10 @@
+require 'rails_helper'
+
 RSpec.describe 'songs/edit', type: :feature do
+
   let(:song_attributes) do
     {
+      
       title: 'Rhythms Which I Played',
       release_year: 2000,
       released: true,
@@ -8,7 +12,7 @@ RSpec.describe 'songs/edit', type: :feature do
       artist_name: 'Man With Instruments'
     }
   end
-
+  
   let(:song) { Song.create!(song_attributes) }
 
   it 'renders the edit song form' do
