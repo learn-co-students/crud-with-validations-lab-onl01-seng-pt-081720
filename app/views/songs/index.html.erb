@@ -1,0 +1,10 @@
+<% @songs.each do |song| %>
+<div class="song">
+  <span><%= song.title %></span>
+    <tbody>
+      <tr>
+        <%= link_to "Delete", song, method: :delete, data: { confirm: "Are you sure you want to delete this song?" } %>
+      </tr>
+    </tbody>
+</div>
+<% end %>
