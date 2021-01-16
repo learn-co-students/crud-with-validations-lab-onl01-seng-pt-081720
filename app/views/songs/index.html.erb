@@ -10,16 +10,16 @@
   </thead>
 
   <tbody>
-    <% @songs.each do |s| %>
+    <% @songs.each do |song| %>
       <tr>
-        <td><%= s.title %></td>
-        <td><%= s.release_year %></td>
-        <td><%= s.genre %></td>
-        <td><%= s.artist_name %></td>
-      </tr>
-      <tr>
-        <%= link_to 'View', song_path(@song) %> |
-        <%= link_to 'Edit', edit_song_path(song) %>
+        <td><%= song.title %></td>
+        <td><%= song.release_year %></td>
+        <td><%= song.genre %></td>
+        <td><%= song.artist_name %></td>
+        <td>
+          <%= link_to 'View', song_path(song) %> |
+          <%= link_to 'Edit', edit_song_path(song) %>
+        </td>
       </tr>
     <% end %>
   </tbody>
