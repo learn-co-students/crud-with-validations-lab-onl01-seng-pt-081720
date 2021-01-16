@@ -11,3 +11,6 @@ by <strong><%= @song.artist_name %></strong>
   <strong>Genre:</strong>
   <%= @song.genre %>
 </p>
+
+<%= link_to 'Edit', edit_song_path(@song) %>
+<%= link_to 'Index', songs_url %>
