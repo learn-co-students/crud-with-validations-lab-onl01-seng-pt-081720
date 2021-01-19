@@ -9,6 +9,11 @@
 <body>
 
 <%= yield %>
-
+ <hr>
+ <br><%= link_to "View All Songs", songs_path %>
+<!--<% unless current_page?(controller: "songs", action: "index") %>
+  <hr />
+  <%= link_to "View All Songs", songs_path %>
+<% end %>-->
 </body>
 </html>
