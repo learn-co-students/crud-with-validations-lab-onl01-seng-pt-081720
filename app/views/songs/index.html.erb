@@ -1,0 +1,7 @@
+<h1>Songs#index</h1>
+<p>Find me in app/views/songs/index.html.erb</p>
+<tbody>
+    <% @songs.all.each do |song| %>
+        <tr><% song.title %></tr>
+    <% end %>
+</tbody>
