@@ -1,0 +1,2 @@
+Song.create(title: "Best I Ever Had", release_year: 2006, released: true, artist_name: "Drake", genre: "Hip Hop")
+Song.create(title: "Pluto Projector", release_year: 2018, released: true, artist_name: "Rex Orange County", genre: "indie pop")
